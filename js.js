@@ -3,19 +3,7 @@ let ctx;
 
 let incrementor = 0;
 
-/*
-This time instead of using this equation for speed.. we will
-just add ++ to move them .   
 
-Adding ++ is the equivalent to saying:
-
-incrementor = incrementor + 1
-
-Adding -- is the equivalent to saying
-
-incrmentor = incrementor -1
-
-*/
 
 let decrementor = 500;
 
@@ -33,8 +21,12 @@ function drawBoxxy() {
 
   ctx.fillStyle = "blue";
   ctx.fillRect(incrementor++, 10, 100, 100);
+   ctx.fillStyle = "orange";
+  ctx.fillRect(decrementor--, 10, 100, 100);
   ctx.fillStyle = "green";
   ctx.fillRect(decrementor--, decrementor--, 250, 250);
+  ctx.fillStyle = "pink";
+  ctx.fillRect(incrementor++, decrementor--, 250, 250);
   ctx.fillStyle = "red";
   ctx.fillRect(incrementor++, decrementor--, incrementor++, incrementor++);
 }
